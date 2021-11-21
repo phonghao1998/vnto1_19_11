@@ -1,0 +1,160 @@
+/* mobile */
+@media(max-width:575px) {
+    .header-nav,.header-setting {
+        display: none;
+    }
+    .header {
+        height: 60px;
+    }
+    .detail-place-date>h2 {
+        font-size:20px;
+        font-weight: 550;
+    }
+    .detail-place-date>p,.detail-place-icon>p, .place-title {
+        font-size:14px;
+    }
+    .detail-place-tem>h2 {
+        font-size:28px;
+        font-weight: 550;
+    }
+    .detail-place-icon>img {
+        width: 60%;
+        height: auto;
+    }
+    .description-img>img {
+        width: 80%;
+        height: 30%;
+        margin-top: 4px;
+    }
+    .description-img {
+        align-items: flex-start;
+    }
+    .city-title-content>span,.why-chose-title>p,.weather-new-title-content>span {
+        font-size:16px;
+        font-weight:550;
+    }
+    .city-title-content>img {
+        height:30px;
+        width: auto;
+    }
+    .tab-btn { 
+        padding: 2px 4px;
+    }
+    .tab-btn>span {
+        font-size:12px;
+    }
+    .main-content {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+    .modal-container {
+        width: 95%;
+        height:auto;
+    }
+    .weather-icon-description-item-item-content>p {
+        font-size:13px;
+    }
+    .wearther-condition-perhour-item-content>span {
+        font-size:14px;
+    }
+    .modal-select-header>h3 {
+        font-size:18px;
+    }
+    .modal-content-item-dep-img{
+        height:24px;
+        width: auto;
+    }
+    .modal-content-item-dep-text>span {
+        font-size:14px;
+    }
+    .modal-content-item-dep-img-box {
+        height:100%;
+        width:40px;
+    }
+    .modal-content-item-setting-nav {
+        font-size:14px;
+    }
+    .modal-content-item-setting-item-icon>img{
+        height: 16px;
+        width: auto;
+    }
+    .weather-icon-description-item-tem {
+        padding-top: 0px;
+    }
+    .weather-icon-description.row{
+
+    }
+}
+
+/* tablet */
+@media (max-width:768px)and (min-width:576px){
+    .modal-content-item-setting-item-icon>img{
+        height: 16px;
+        width: auto;
+    }
+    .header-nav,.header-setting {
+        display: none;
+    }
+    .header {
+        height: 60px;
+    }
+    .detail-place-date>h2 {
+        font-size:24px;
+        font-weight: 550;
+    }
+    .detail-place-date>p,.detail-place-icon>p, .place-title {
+        font-size:16px;
+    }
+    .detail-place-tem>h2 {
+        font-size:32px;
+        font-weight: 550;
+    }
+    .detail-place-icon>img {
+        width: 60%;
+        height: auto;
+    }
+    .description-img>img {
+        height: 30%;
+        width: auto;
+    }
+    .city-title-content>span,.why-chose-title>p,.weather-new-title-content>span {
+        font-size:20px;
+        font-weight:550;
+    }
+    .city-title-content>img {
+        height:32px;
+        width: auto;
+    }
+    .tab-btn { 
+        padding: 8px 10px;
+    }
+    .tab-btn>span {
+        font-size:14px;
+    }
+    .main-content {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+    .modal-container {
+        width: 60%;
+        height:auto;
+    }
+}
+
+/* not mobile */
+@media (min-width: 769px) {
+    .header-menu {
+        display: none;
+    }
+    .menu-mobile{
+        display:none;
+    }
+    .modal-content-item-setting-item-icon>img {
+        height:24px;
+        width: auto;
+    }
+}
