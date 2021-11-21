@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/container.css">
+    <link rel="stylesheet" href="./asset/css/modal.css">
+    <link rel="stylesheet" href="./asset/css/reponsive.css">
+    <link rel="stylesheet" type="text/css" href="./asset/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./asset/slick-1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 col-sm-12 h-100">
+                    <div class="header-content h-100 flex-between ">
+                        <div class="header-main-option h-100 flex">
+                            <div class="header-icon flex h-100">
+                                <a href="" class="flex"><img src="./asset/img/ic_logo.png" alt="" class="header-img mr-auto  "></a>
+                            </div>
+                            <div class="header-nav">
+                                <ul class="header-option-list h-100 flex">
+                                    <li class="header-option-item flex"><a href="#">Home</a></li>
+                                    <li class="header-option-item flex"><a href="#">App</a></li>
+                                    <li class="header-option-item flex"><a href="#">Radar</a></li>
+                                    <li class="header-option-item flex"><a href="#">New</a></li>
+                                    <li class="header-option-item flex"><a href="#">About</a></li>
+                                    <li class="header-option-item flex"><a href="#">Top 100 cities</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-setting flex ">
+                            <div class="flex mr-auto header-setting-icon">
+                                <img src="./asset/img/ic_settings.png" alt="" class="mr-auto">
+                            </div>
+                        </div>
+                        <button class="header-menu flex " data-bs-toggle="collapse" href="#menu" role="button" aria-expanded="false" aria-controls="menu">
+                            <div class="flex mr-auto header-setting-icon">
+                                <img src="./asset/img/ic_precipiation.png" alt="" class="mr-auto">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-mobile pb-2 collapse" id="menu">
+        <div class="container">
+            <div class="menu-content">
+                <ul class="menu-list">
+                    <li class="menu-list-item flex">
+                        <a class="item-link ">
+                            <p class="text-white">Home</p>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="item-link">
+                            <p class="text-white">App</p>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="item-link">
+                            <p class="text-white">Ra dar</p>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="item-link">
+                            <p class="text-white">New</p>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="item-link">
+                            <p class="text-white">About</p>
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a class="item-link">
+                            <p class="text-white">Top 100 Cities</p>
+                        </a>
+                    </li>
+                    <div class=" header-setting-mobile flex">
+                        <img src="./asset/img/ic_settings.png" alt="" class="mr-auto">
+                    </div>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content " >
+        <div class="container">
+            <div class="box-search">
+                <div class="row">
+                    <div class="col-0 col-sm-2"></div>
+                    <div class="col-2 col-sm-1">
+                        <div class="location-btn">
+                            <img src="./asset/img/search_location@2x.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-8 col-sm-6">
+                        <div class="search-content">
+                            <input type="text" placeholder="Ha noi" class="form-search">
+                        </div>
+                    </div>
+                    <div class="col-2 col-sm-1">
+                        <div class="search-btn">
+                            <img src="./asset/img/search_search@2x-btn.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-0 col-sm-2"></div>
+                </div>
+            </div>
+            
+            <div class="current-place">
+                <div class="row gx-0">
+                    <div class="col-12 col-sm-3">
+                        <div class="curent-place-content flex">
+                            <img src="./asset/img/weather_mostlysun (1).png" alt="" class="mr-auto">
+                            <span class="mr-auto">21<sup>o</sup>C Ha noi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="option-time ">
+                <div class="row gx-0">
+                    <div class="col-3 col-sm-3">
+                        <div class="option-time-item tab-btn tab-btn-chose flex">
+                            <span class="mr-auto">
+                                Global
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-3">
+                        <div class="option-time-item tab-btn flex">
+                            <span class="mr-auto">
+                                Current
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-3">
+                        <div class="option-time-item tab-btn flex">
+                            <span class="mr-auto">
+                                Hour
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-3">
+                        <div class="option-time-item tab-btn flex">
+                            <span class="mr-auto">
+                                Weekend
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- detail for place -->
+            <div class="detail-place">
+                <div class="detail-palce-titile">
+                    <div class="row ">
+                        <div class="col-12 col-sm-12 flex">
+                            <p class="mr-auto text-white py-2 place-title">Ha noi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-place-content">
+                    <div class="row">
+                        <div class="col-4 col-sm-4 flex description-img">
+                            <div class="detail-place-date mr-auto flex-col">
+                                <p class="current-date text-white">11.19.2021</p>
+                                <h2 class="current-time text-white">01:01 PM</h2>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4 flex description-img">
+                            <div class="detail-place-tem mr-auto text-white"> 
+                                    <h2 class="current-tem">
+                                    21<sup>o</sup>C
+                                    </h2>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4 flex description-img">
+                            <div class="detail-place-icon mr-auto">
+                                <img src="./asset/img/weather_mostlysun (1).png" alt="" class="">
+                                <p class="text-white">Mostly cloudy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- weather-icon-description -->
+            <div class="weather-icon-description pt-3 pb-1">
+                <div class="row ">
+                    <div class="col-4 col-sm-4">
+                        <div class="weather-icon-description-item">
+                            <div class="row gx-0 flex-nowarap flex-nowrap">
+                                <div class="col-4 col-sm-5 flex description-img">
+                                    <img src="./asset/img/ic_temp_min.png" alt="" class="weather-icon-description-item-icon mr-auto img-h-80">
+                                </div>
+                                
+                                <div class="col-8 col-sm-6 flex">
+                                    <div class="weather-icon-description-item-item-content">
+                                        <p class="weather-icon-description-item-tem text-white">
+                                                19<sup>o</sup>C
+                                        </p>
+                                        <p class="weather-icon-description-item-text text-white">
+                                            Nhiệt độ thấp nhất
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="weather-icon-description-item">
+                            <div class="row gx-0 flex-nowarap">
+                                <div class="col-4 col-sm-5 flex description-img">
+                                    <img src="./asset/img/ic_wind_speed.png" alt="" class="weather-icon-description-item-icon mr-auto img-h-80">
+                                </div>
+                                
+                                <div class="col-8 col-sm-6 flex">
+                                    <div class="weather-icon-description-item-item-content">
+                                        <p class="weather-icon-description-item-tem text-wrap text-white">
+                                            6.679 km/h
+                                        </p>
+                                        <p class="weathe-icon-description-item-text text-wrap text-white">
+                                            Tốc độ gió
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="weather-icon-description-item">
+                            <div class="row gx-0 flex-nowarap">
+                                <div class="col-4 col-sm-5 flex description-img">
+                                    <img src="./asset/img/ic_sunrise.png" alt="" class="weather-icon-description-item-icon mr-auto img-h-80">
+                                </div>
+                                
+                                <div class="col-8 col-sm-6 flex">
+                                    <div class="weather-icon-description-item-item-content">
+                                        <p class="weather-icon-description-item-tem text-white">
+                                            06:11
+                                        </p>
+                                        <p class="weathe-icon-description-item-text text-white">
+                                            Thời gian mặt trời mọc
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="weather-icon-description-item">
+                            <div class="row gx-0 flex-nowarap">
+                                <div class="col-4 col-sm-5 flex description-img">
+                                    <img src="./asset/img//ic_uv.png" alt="" class="weather-icon-description-item-icon mr-auto img-h-80">
+                                </div>
+                                
+                                <div class="col-8 col-sm-6 flex">
+                                    <div class="weather-icon-description-item-item-content">
+                                        <p class="weather-icon-description-item-tem text-white">
+                                            4 (High)
+                                        </p>
+                                        <p class="weathe-icon-description-item-text text-white">
+                                            Chỉ số UV
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="weather-icon-description-item">
+                            <div class="row gx-0 flex-nowarap">
+                                <div class="col-4 col-sm-5 flex description-img">
+                                    <img src="./asset/img/ic_wind_chill.png" alt="" class="weather-icon-description-item-icon mr-auto img-h-80">
+                                </div>
+                                
+                                <div class="col-8 col-sm-6 flex">
+                                    <div class="weather-icon-description-item-item-content">
+                                        <p class="weather-icon-description-item-tem text-white">
+                                            22<sup>o</sup>C
+                                        </p>
+                                        <p class="weathe-icon-description-item-text text-white">
+                                            Nhiệt độ cảm giác
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="weather-icon-description-item">
+                            <div class="row gx-0 flex-nowarap">
+                                <div class="col-4 col-sm-5 flex description-img">
+                                    <img src="./asset/img/ic_temp_max.png" alt="" class="weather-icon-description-item-icon mr-auto img-h-80">
+                                </div>
+                                
+                                <div class="col-8 col-sm-6 flex">
+                                    <div class="weather-icon-description-item-item-content">
+                                        <p class="weather-icon-description-item-tem text-white">
+                                            23<sup>o</sup>C
+                                        </p>
+                                        <p class="weathe-icon-description-item-text text-white">
+                                            Nhiệt độ cao nhất
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tab-feature -->
+            <div class="tab-time mt-4">
+                <ul class="nav mb-4 nav-justified " id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link tab-btn tab-btn-chosen active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <span class="text-white">Next 24h</span>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link tab-btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <span class="text-white">Next 7 days</span>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link tab-btn" id="pills-chart-tab" data-bs-toggle="pill" data-bs-target="#pills-chart" type="button" role="tab" aria-controls="pills-chart" aria-selected="false">
+                        <span class="text-white">Graph</span>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-link tab-btn" id="pills-moon-tab" data-bs-toggle="pill" data-bs-target="#pills-moon" type="button" role="tab" aria-controls="pills-moon" aria-selected="false">
+                            <span class="text-white">Moon phase</span>
+                        </div>
+                    </li>
+                </ul>
+    
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row px-4 ">
+                            <div class="col-6 col-sm-3 mb-4 ">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab ">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_cloudy@2x.png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_cloudy@2x.png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_cloudy@2x.png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_cloudy@2x.png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_cloudy@2x.png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_cloudy@2x.png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_cloudy@2x.png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_cloudy@2x.png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row px-4 ">
+                            <div class="col-6 col-sm-3 mb-4 ">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_mostlysun (1).png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_mostlysun (1).png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_mostlysun (1).png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_mostlysun (1).png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_mostlysun (1).png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_mostlysun (1).png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_mostlysun (1).png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4">
+                                <div class="wearther-condition-perhour-item-content py-2 flex-col-tab">
+                                    <span class="wearther-condition-perhour-item-content-time text-white">
+                                        12:00 CH
+                                    </span>
+                                    <img src="./asset/img/weather_mostlysun (1).png" class="wearther-condition-perhour-item-content-img img-w-50" alt="">
+                                    
+                                    <span class="wearther-condition-perhour-item-content-temperature text-white">
+                                        21<sup>o</sup>C
+                                    </span>
+                                    <span class="wearther-condition-perhour-item-content-condition text-white">
+                                        U ám
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-chart" role="tabpanel" aria-labelledby="pills-chart-tab">
+                        <div class="chart-tab">
+                            <div class="row px-4">
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="bar-chart">
+                                        <canvas id="barChart" style="width:100%;"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="line-chart">
+                                        <canvas id="lineChart" style="width:100%;"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="line-chart1">
+                                        <canvas id="lineChart1" style="width:100%;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-moon" role="tabpanel" aria-labelledby="pills-moon-tab">
+                        <div class="row">
+                            <div class="col-12 col-sm-5 flex">
+                                <div class="moon-title flex mr-auto">
+                                    <div class="moon-title-content mr-auto flex-col">
+                                        <img src="./asset/img/halfmoon.png" alt="" class="img-w-100 mr-auto">
+                                        <p class="text-white text-center mt-3">Trăng khuyết</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-7">
+                                <div class="row gx-0 px-4">
+                                    <div class="col-2 col-sm-2">
+                                        <div class="moon-condition-day">
+                                            <p class="text-white text-center">Mon</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2">
+                                        <div class="moon-condition-day">
+                                            <p class="text-white text-center">Tue</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2">
+                                        <div class="moon-condition-day">
+                                            <p class="text-white text-center">Wed</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2">
+                                        <div class="moon-condition-day">
+                                            <p class="text-white text-center">Thu</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2">
+                                        <div class="moon-condition-day">
+                                            <p class="text-white text-center">Fri</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2">
+                                        <div class="moon-condition-day">
+                                            <p class="text-white text-center">Sat</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-2 ">
+                                        <div class="moon-conditon flex-center flex-col py-2">
+                                            <img src="./asset/img/moon_half.png" alt="" class="img-w-60 mr-auto">
+                                            <span class="day text-white text-center">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- city -->
+            <div class="city ">
+                <div class="city-title">
+                    <div class="row">
+                        <div class="col-1 col-sm-2"></div>
+                        <div class="col-10 col-sm-8 py-4">
+                            <div class="city-title-content text-center">
+                                <img src="./asset/img/ic_earth.png" alt="" class="">
+                                <span class="text-white text-center">The Typical Weather Anywhere On Earth</span>
+                            </div>
+                        </div>
+                        <div class="col-1 col-sm-2"></div>
+                    </div>
+                </div>
+                <div class="slide-city px-4">
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="slide-city-item">
+                        <img src="./asset/img/vn_hanoi.png" alt="">
+                        <div class="slide-city-item-text text-white">
+                            <p class="text-center">Ha noi,</p>
+                            <p class="text-center">Viet Nam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- why chose  -->
+            <div class="why-chose py-4 mt-4">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="why-chose-title">
+                            <p class="text-center text-white"> Why choose GoWeather?</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12">
+                        <div class="row p-4">
+                            <div class="col-12 col-sm-4">
+                                <div class="why-chose-reason">
+                                    <p class="text-white"><img src="./asset/img/check.png" alt="">Free to download and install (Android & iOS)</p>
+                                    <p class="text-white"><img src="./asset/img/check.png" alt="">Constant updates on weather conditions: Temperature, humidity, pressure, UV index and chance of rain.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="why-chose-reason">
+                                    <p class="text-white"><img src="./asset/img/check.png" alt="">Free to download and install (Android & iOS)</p>
+                                    <p class="text-white"><img src="./asset/img/check.png" alt="">Constant updates on weather conditions: Temperature, humidity, pressure, UV index and chance of rain.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="why-chose-reason">
+                                    <p class="text-white"><img src="./asset/img/check.png" alt="">Free to download and install (Android & iOS)</p>
+                                    <p class="text-white"><img src="./asset/img/check.png" alt="">Constant updates on weather conditions: Temperature, humidity, pressure, UV index and chance of rain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- weather news -->
+            <div class="weather-new">
+                <div class="weather-new-title">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 p-3">
+                            <div class="weather-new-title-content text-center">
+                                <span class="text-white text-center">
+                                    Weather News
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-new-content">
+                    <div class="row p-4">
+                        <div class="col-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-12 col-sm-12">
+                                    <div class="main-img">
+                                        <img src="./asset/img/main.png" class=""alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <div class="main-content-new">
+                                        <span class="text-white">Perfect ideas for delicious picnic foods for hot weather</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-4">
+                                            <div class="item-img">
+                                                <img src="./asset/img/item1.png" class="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8">
+                                            <div class="item-content">     
+                                                <span class="text-white">Forecast weather: Elements of weather and instruments used to measure them</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-4 my-3">
+                                            <div class="item-img">
+                                                <img src="./asset/img/item2.png" class="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8">
+                                            <div class="item-content">     
+                                                <span class="text-white">Summer Weather Prediction Contrasts Stridently Throughout Canada</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-4">
+                                            <div class="item-img">
+                                                <img src="./asset/img/item3.png" class="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8">
+                                            <div class="item-content">     
+                                                <span class="text-white">Winter Solstice 2020 sets stage for the Great Conjunction of Jupiter & Saturn</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       <!-- footer -->
+       <div class="footer py-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="introduce">
+                        <img src="./asset/img/ic_logo.png" alt="">
+                        <p class="text-left text-white">Offering more than 15 useful parameters, GoWeather is an ideal place to get accurate, up-to-date, and detailed weather forecast information.</p>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="Useful-Links">
+                        <p class="text-white">UsefulLinks</p>
+                        <a href="">
+                            <p class="text-white">Blog</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="app">
+                        <p class="text-white">Apps</p>
+                        <div class="row ">
+                            <div class="col-6 col-sm-12">
+                                <div class="app-img mt-2">
+                                    <img src="./asset/img/btn_google.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <div class="app-img mt-2">
+                                    <img src="./asset/img/btn_appstore.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="social">
+                        <p class="text-white">Social</p>
+                        <div class="social-icon">
+                            <img src="./asset/img/btn_facebook.png" alt="">
+                            <img src="./asset/img/btn_pinterest.png" alt="">
+                            <img src="./asset/img/btn_twitter.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+    <!-- modal -->
+    <div  class="modal">
+        <div class="modal-container">
+            <div class="modal-select-header flex">
+                <h3>
+                    THIẾT LẬP ĐƠN VỊ
+                </h3>
+                <div id="Btn-close" class="modal-close">
+                    X
+                </div>
+            </div>
+            <div class="modal-select-content">
+                <div class="modal-content-item flex-between">
+                    <div class="modal-content-item-dep">
+                        <div class="flex">
+                            <div class="modal-content-item-dep-img-box">
+                                <img src="./asset/img/ic_temp_min.png" class="modal-content-item-dep-img"alt="">
+                            </div>
+                            <div class="modal-content-item-dep-text">
+                                <span>Nhiệt độ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content-item-setting modal-content-item-setting-color flex">
+                        <div class="modal-content-item-setting-item" id="F">
+                            <sup>o</sup>F
+                        </div>
+                        <div class="modal-content-item-setting-item modal-content-item-setting-item-color" id="C">
+                            <sup>o</sup>C
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content-item flex-between">
+                    <div class="modal-content-item-dep">
+                        <div class="flex">
+                            <div class="modal-content-item-dep-img-box">
+                                <img src="./asset/img/ic__time.png" class="modal-content-item-dep-img" alt="">
+                            </div>
+                            <div class="modal-content-item-dep-text">
+                                <span>Định dạng thời gian</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content-item-setting modal-content-item-setting-color flex">
+                        <div class="modal-content-item-setting-item modal-content-item-setting-item-color" id="12">
+                            12
+                        </div>
+                        <div class="modal-content-item-setting-item " id="24">
+                            24
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content-item flex-between">
+                    <div class="modal-content-item-dep">
+                        <div class="flex">
+                            <div class="modal-content-item-dep-img-box">
+                                <img src="./asset/img/unit_settings_date.png" class="modal-content-item-dep-img" alt="">
+                            </div>
+                            <div class="modal-content-item-dep-text">
+                                <span>Định dạng ngày tháng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content-item-setting  flex">
+                        <div class="modal-content-item-setting-nav">
+                            MM.dd.yyyy
+                        </div>
+                        <button class="down-btn-date" data-bs-toggle="collapse"  type="button" href="#date" role="button" aria-expanded="false" aria-controls="date">
+                            <div class="modal-content-item-setting-item-icon" >
+                                <img src="./asset/img/ic_detail_dropdown.png" alt="" class="">
+                            </div>
+                        </button>
+                        <div class="collapse box-down" id="date">
+                            <ul class="date-list">
+                                <li class="date-list-item text-white">MM.dd.yyyy</li>
+                                <li class="date-list-item text-white">MM/dd/yyyy</li>
+                                <li class="date-list-item text-white">MM-dd-yyyy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content-item flex-between">
+                    <div class="modal-content-item-dep">
+                        <div class="flex">
+                            <div class="modal-content-item-dep-img-box">
+                                <img src="./asset/img/ic_wind_speed.png" class="modal-content-item-dep-img" alt="">
+                            </div>
+                            
+                            <div class="modal-content-item-dep-text">
+                                <span>Tốc độ gió</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content-item-setting flex">
+                        <div class="modal-content-item-setting-nav">
+                            km/h
+                        </div>
+                        <button class="down-btn-date" data-bs-toggle="collapse"  type="button" href="#speed-wind" role="button" aria-expanded="false" aria-controls="speed-wind">
+                            <div class="modal-content-item-setting-item-icon">
+                                <img src="./asset/img/ic_detail_dropdown.png" alt="" class="">
+                            </div>
+                        </button>
+                        <div class="collapse box-down" id="speed-wind">
+                            <ul class="date-list">
+                                <li class="date-list-item text-white">mph</li>
+                                <li class="date-list-item text-white">km/h</li>
+                                <li class="date-list-item text-white">m/s</li>
+                                <li class="date-list-item text-white">knots</li>
+                                <li class="date-list-item text-white">fit/s</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content-item flex-between">
+                    <div class="modal-content-item-dep">
+                        <div class="flex">
+                            <div class="modal-content-item-dep-img-box">
+                                <img src="./asset/img/ic_pressure.png" class="modal-content-item-dep-img" alt="">
+                            </div>
+                            
+                            <div class="modal-content-item-dep-text">
+                                <span>Áp suất</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content-item-setting flex">
+                        <div class="modal-content-item-setting-nav">
+                            mbar
+                        </div>
+                        <button class="down-btn-date" data-bs-toggle="collapse"  type="button" href="#pressure" role="button" aria-expanded="false" aria-controls="pressure">
+
+                            <div class="modal-content-item-setting-item-icon" >
+                                <img src="./asset/img/ic_detail_dropdown.png" alt="" class="">
+                            </div>
+                        </button>
+                        <div class="collapse box-down" id="pressure">
+                            <ul class="date-list">
+                                <li class="date-list-item text-white">mmHg</li>
+                                <li class="date-list-item text-white">inHg</li>
+                                <li class="date-list-item text-white">hPa</li>
+                                <li class="date-list-item text-white">mbar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content-item flex-between">
+                    <div class="modal-content-item-dep">
+                        <div class="flex">
+                            <div class="modal-content-item-dep-img-box">
+                                <img src="./asset/img/ic_precipiation.png" class="modal-content-item-dep-img" alt="">
+                            </div>
+                            
+                            <div class="modal-content-item-dep-text">
+                                <span>Lượng mưa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content-item-setting flex">
+                        <div class="modal-content-item-setting-nav">
+                            in
+                        </div>
+                        <button class="down-btn-date" data-bs-toggle="collapse"  type="button" href="#current-rain" role="button" aria-expanded="false" aria-controls="current-rain">
+
+                            <div class="modal-content-item-setting-item-icon">
+                                <img src="./asset/img/ic_detail_dropdown.png" alt="" class="">
+                            </div>
+                        </button>
+                        <div class="collapse box-down" id="current-rain">
+                            <ul class="date-list">
+                                <li class="date-list-item text-white">mm</li>
+                                <li class="date-list-item text-white">in</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./asset/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./asset/slick-1.8.1/slick/slick.js"></script>
+    <script src="./asset/js/main.js"></script>
+    <script src="./asset/js/slide.js"></script>
+    <script>
+        var xValues = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+        var yValues = [55, 49, 44, 24, 15,30, 45,29];
+        var barColors = ["#f7a35c"];
+        
+        new Chart("barChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            title: {
+              display: true,
+              text: "Nhiệt độ"
+            }
+          }
+        });
+    </script>
+    <script>
+        var xValues = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+        var yValues = [0, 0.08, 0.15, 0.5,0.2, 0.1,0.06];
+        
+        new Chart("lineChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "#f7a35c",
+              borderColor: "#f7a35c",
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: 6, max:16}}],
+            }
+          }
+        });
+    </script>
+    <script>
+        var xValues = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+        var yValues = [1000, 800, 650, 700,900, 1200,1100];
+
+        new Chart("lineChart1", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+            fill: false,
+            lineTension: 0,
+            backgroundColor: "#f7a35c",
+            borderColor: "#f7a35c",
+            data: yValues
+            }]
+        },
+        options: {
+            legend: {display: false},
+            scales: {
+            yAxes: [{ticks: {min: 6, max:16}}],
+            }
+        }
+        });
+    </script>
+</body>
+</html>

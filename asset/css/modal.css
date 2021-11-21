@@ -1,0 +1,144 @@
+.modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* right: 0px;
+    bottom: 0px; */
+    background-color: rgba(0, 0,0, 0.4);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 999999999999;
+}
+
+.modal.open{
+    display: flex;
+    
+}
+.modal-container{
+    margin:10% auto;
+    background-color: white;
+    width: 500px;
+    min-height: 200px;
+    max-width: calc(100%-100px);
+    animation: modalFadein ease 0.8s;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.modal-select-header{
+    background-color: #2b2b2b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: center;
+    padding: 22px 16px;
+    position: relative;
+}
+.modal-select-content{
+    background-color:#454545;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.modal-content-item-dep-img{
+    height:36px;
+    width: auto;
+}
+.modal-content-item {
+    padding:16px 16px;
+    border-bottom: 1px solid white;
+}
+.modal-content-item-dep-img-box {
+    height:100%;
+    width:60px;
+}
+.modal-content-item-dep-text>span {
+    color: white;
+}
+.modal-content-item-dep-text{
+    text-align: center;
+}
+.modal-content-item-setting-color{
+    background-color:#383838;
+    border-radius: 6px;
+    height:26px;
+    padding:0 4px;
+}
+.modal-content-item-setting-item-color{
+    background-color:orangered;
+    border-radius: 6px;
+    height: 20px;
+    padding: 0 8px;
+    
+}
+.modal-content-item-setting-item {
+    border-radius: 6px;
+    height: 20px;
+    padding: 0 8px;
+    margin: auto;
+    cursor: pointer;
+}
+.modal-content-item-setting-nav{
+    color: #fff;
+    margin-right: 8px;
+    text-align: center;
+}
+.modal-close {
+    position: absolute;
+    right: 16px;
+    color:white;
+    font-weight: 550;
+    filter: brightness(60%);
+}
+.modal-close:hover {
+    filter: brightness(100%); 
+    cursor: pointer;
+}
+.modal-select-header>h3 {
+    margin: auto;
+    color: #fff;
+}
+.modal-content-item-setting-item-icon>img{
+    background-color: #454545;
+}
+.modal-content-item-setting {
+    position: relative;
+}
+.box-down {
+    position: absolute;
+    top:100%;
+    right: 0;
+    z-index: 99999999999999999999999999999;
+    background-color: #454545;
+    border: 1px solid white ;
+}
+.date-list {
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.date-list-item {
+    padding:2px 30px 2px 2px ;
+    width:100%;
+    font-size: 14px;
+}
+.date-list-item:hover {
+    background-color:#396cdd; 
+}
+.down-btn-date {
+    border:none;
+    background-color:#454545;
+    
+}
+
+@keyframes modalFadein{
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
