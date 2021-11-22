@@ -18,7 +18,7 @@
     
 }
 .modal-container{
-    margin:10% auto;
+    margin: auto;
     background-color: white;
     width: 500px;
     min-height: 200px;
@@ -128,8 +128,14 @@
 }
 .down-btn-date {
     border:none;
-    background-color:#454545;
-    
+    background-color:#454545; 
+}
+.form-select {
+    background-color:#454545 ;
+    background-image: url('assets/img/arrow_dropdown.png') no-repeat;
+    color: #fff;
+    outline: none;
+    border: none;
 }
 
 @keyframes modalFadein{
