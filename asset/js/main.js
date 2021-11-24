@@ -269,13 +269,16 @@ const place = [
     
 ]
  
-var time = new Date();
-var currentTime =  time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-var currentDate = time.getDate() + '.' + (time.getMonth()+1)  + '.' + time.getFullYear();
-console.log(currentDate);
-console.log(currentTime);
-document.querySelector('.detail-place-date h2').innerHTML = currentTime;
-document.querySelector('.detail-place-date p').innerHTML = currentDate;
+function refeshTime() {
+    var time = new Date();
+    var currentTime =  time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+    var currentDate = time.getDate() + '.' + (time.getMonth()+1)  + '.' + time.getFullYear();
+    console.log(currentDate);
+    console.log(currentTime);
+    document.querySelector('.detail-place-date h2').innerHTML = currentTime;
+    document.querySelector('.detail-place-date p').innerHTML = currentDate;
+}
+setInterval(refeshTime, 1000);
 
 const currentTimes = document.querySelectorAll('.curent-place-content')
 const placeTitle = document.querySelector('.detail-palce-title-content p')
