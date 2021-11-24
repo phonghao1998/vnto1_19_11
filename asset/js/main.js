@@ -268,7 +268,14 @@ const place = [
     },
     
 ]
-
+ 
+var time = new Date();
+var currentTime =  time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+var currentDate = time.getDate() + '.' + (time.getMonth()+1)  + '.' + time.getFullYear();
+console.log(currentDate);
+console.log(currentTime);
+document.querySelector('.detail-place-date h2').innerHTML = currentTime;
+document.querySelector('.detail-place-date p').innerHTML = currentDate;
 
 const currentTimes = document.querySelectorAll('.curent-place-content')
 const placeTitle = document.querySelector('.detail-palce-title-content p')
@@ -289,6 +296,7 @@ currentTimes.forEach((item, index) => {
         document.getElementById("feel-tem").innerHTML = place[index].feelTem;
         document.getElementById("max-tem").innerHTML = place[index].maxTem;
         placeCurrentImg.src = "./asset/img/" + place[index].img;
+        
         
     })
 })
