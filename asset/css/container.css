@@ -78,6 +78,13 @@
     padding:16px 0 8px 0;
     margin: 0;
 }
+.detail-place {
+    display: none;
+}
+.detail-place-active {
+    display: block;
+}
+
 
 
 /* tab */
@@ -91,7 +98,7 @@
 .tab-btn {
     border: 1px solid #4b4952;
 }
-.moon-condition-day {
+.moon-current-day {
     border-bottom: 2px solid #4b4952;
     border-right: 2px solid #4b4952;
 }
@@ -109,7 +116,22 @@
 .tab-btn:hover {
     background-color: #8a8b94;
 }
-/* slide */
+.moon-active {
+    background-color: red;
+}
+.moon-title {
+    display: none;
+}
+.moon-title-active {
+    display: flex;
+}
+.moon-title-content>img {
+    height:60%;
+    width: auto;
+}
+
+
+/* slide */    
 .slick-slide img{
     width:100%;
 }

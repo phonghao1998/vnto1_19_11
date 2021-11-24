@@ -153,4 +153,47 @@ function hideMenu() {
     menu.classList.remove('open')
 }
 
+// tab moon
+const moonConditions = document.querySelectorAll('.moon-conditon');
+// const moonConditionImgs = document.querySelectorAll('.moon-conditon img');
+const moonTitles = document.querySelectorAll('.moon-title');
+// const moonTitleImg = document.querySelector('.moon-title-content img');
+moonConditions.forEach((item, index) => {
+   const Title = moonTitles[index];
+    item.addEventListener('click', function() {
+        removeaActive(moonConditions);
+        removeaActiveTitle(moonTitles);
+        console.log(Title)
+        Title.classList.add('moon-title-active');
+        this.classList.add('moon-active');
+        // moonTitleImg.src = moonConditionImgs[index].src;
+    });
+});
+function removeaActive(item) {
+  for (var i = 0; i < item.length; i++) {
+    item[i].classList.remove('moon-active');
+  }
+}
+function removeaActiveTitle(item) {
+    for (var i = 0; i < item.length; i++) {
+      item[i].classList.remove('moon-title-active');
+    }
+}
 
+// .tab time
+
+const currentTimes = document.querySelectorAll('.curent-place-content')
+const deTailPlaces = document.querySelectorAll('.detail-place')
+ 
+currentTimes.forEach((item, index) => {
+    const Place = deTailPlaces[index];
+    item.addEventListener('click', function(){
+        removePlaceActive(deTailPlaces);
+        Place.classList.add('detail-place-active')
+    })
+})
+function removePlaceActive(item) {
+    for (var i = 0; i < item.length; i++) {
+      item[i].classList.remove('detail-place-active');
+    }
+  }
