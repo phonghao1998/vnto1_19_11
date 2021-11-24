@@ -137,12 +137,7 @@
                             <span class="mr-auto">16<sup>o</sup>C Tokyo</span>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3">
-                        <div class="curent-place-content flex">
-                            <img src="./asset/img/weather_cloudy@2x.png" alt="" class="mr-auto">
-                            <span class="mr-auto">19<sup>o</sup>C New York</span>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="option-time ">
@@ -181,7 +176,7 @@
             <div class="detail-place detail-place-active">
                 <div class="detail-palce-titile">
                     <div class="row ">
-                        <div class="col-12 col-sm-12 flex">
+                        <div class="col-12 col-sm-12 flex detail-palce-title-content">
                             <p class="mr-auto text-white py-2 place-title">Ha noi</p>
                         </div>
                     </div>
@@ -197,7 +192,7 @@
                         <div class="col-4 col-sm-4 flex description-img">
                             <div class="detail-place-tem mr-auto text-white"> 
                                     <h2 class="current-tem">
-                                        23<sup>o</sup>C 
+                                        <span>23</span><sup>o</sup>C 
                                     </h2>
                             </div>
                         </div>
@@ -210,102 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="detail-place">
-                <div class="detail-palce-titile">
-                    <div class="row ">
-                        <div class="col-12 col-sm-12 flex">
-                            <p class="mr-auto text-white py-2 place-title">Istanbul</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="detail-place-content">
-                    <div class="row">
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-date mr-auto flex-col">
-                                <p class="current-date text-white">11.19.2021</p>
-                                <h2 class="current-time text-white">01:01 PM</h2>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-tem mr-auto text-white"> 
-                                    <h2 class="current-tem">
-                                    15<sup>o</sup>C
-                                    </h2>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-icon mr-auto">
-                                <img src="./asset/img/weather_cloudy@2x.png" alt="" class="">
-                                <p class="text-white">Mostly rainy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="detail-place">
-                <div class="detail-palce-titile">
-                    <div class="row ">
-                        <div class="col-12 col-sm-12 flex">
-                            <p class="mr-auto text-white py-2 place-title">Tokyo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="detail-place-content">
-                    <div class="row">
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-date mr-auto flex-col">
-                                <p class="current-date text-white">11.19.2021</p>
-                                <h2 class="current-time text-white">01:01 PM</h2>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-tem mr-auto text-white"> 
-                                    <h2 class="current-tem">
-                                    16<sup>o</sup>C
-                                    </h2>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-icon mr-auto">
-                                <img src="./asset/img/weather_mostlysun (1).png" alt="" class="">
-                                <p class="text-white">Mostly cloudy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="detail-place">
-                <div class="detail-palce-titile">
-                    <div class="row ">
-                        <div class="col-12 col-sm-12 flex">
-                            <p class="mr-auto text-white py-2 place-title">New York</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="detail-place-content">
-                    <div class="row">
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-date mr-auto flex-col">
-                                <p class="current-date text-white">11.19.2021</p>
-                                <h2 class="current-time text-white">01:01 PM</h2>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-tem mr-auto text-white"> 
-                                    <h2 class="current-tem">
-                                   19<sup>o</sup>C
-                                    </h2>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4 flex description-img">
-                            <div class="detail-place-icon mr-auto">
-                                <img src="./asset/img/weather_cloudy@2x.png" alt="" class="">
-                                <p class="text-white">Mostly rainy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ 
             <!-- weather-icon-description -->
             <div class="weather-icon-description pt-3 pb-1">
                 <div class="row ">
@@ -318,8 +218,8 @@
                                 
                                 <div class="col-8 col-sm-6 flex">
                                     <div class="weather-icon-description-item-item-content">
-                                        <p class="weather-icon-description-item-tem text-white">
-                                                19<sup>o</sup>C
+                                        <p class="weather-icon-description-item-tem text-white" >
+                                                <span id="min-tem">19</span><sup>o</sup>C
                                         </p>
                                         <p class="weather-icon-description-item-text text-white">
                                             Nhiệt độ thấp nhất
@@ -338,7 +238,7 @@
                                 
                                 <div class="col-8 col-sm-6 flex">
                                     <div class="weather-icon-description-item-item-content">
-                                        <p class="weather-icon-description-item-tem text-wrap text-white">
+                                        <p class="weather-icon-description-item-tem text-wrap text-white" id="speed-wind">
                                             6.679 km/h
                                         </p>
                                         <p class="weathe-icon-description-item-text text-wrap text-white">
@@ -358,7 +258,7 @@
                                 
                                 <div class="col-8 col-sm-6 flex">
                                     <div class="weather-icon-description-item-item-content">
-                                        <p class="weather-icon-description-item-tem text-white">
+                                        <p class="weather-icon-description-item-tem text-white" id="time-sun">
                                             06:11
                                         </p>
                                         <p class="weathe-icon-description-item-text text-white">
@@ -378,7 +278,7 @@
                                 
                                 <div class="col-8 col-sm-6 flex">
                                     <div class="weather-icon-description-item-item-content">
-                                        <p class="weather-icon-description-item-tem text-white">
+                                        <p class="weather-icon-description-item-tem text-white" id="uv">
                                             4 (High)
                                         </p>
                                         <p class="weathe-icon-description-item-text text-white">
@@ -399,7 +299,7 @@
                                 <div class="col-8 col-sm-6 flex">
                                     <div class="weather-icon-description-item-item-content">
                                         <p class="weather-icon-description-item-tem text-white">
-                                            22<sup>o</sup>C
+                                            <span id="feel-tem">22</span><sup>o</sup>C
                                         </p>
                                         <p class="weathe-icon-description-item-text text-white">
                                             Nhiệt độ cảm giác
@@ -418,8 +318,8 @@
                                 
                                 <div class="col-8 col-sm-6 flex">
                                     <div class="weather-icon-description-item-item-content">
-                                        <p class="weather-icon-description-item-tem text-white">
-                                            23<sup>o</sup>C
+                                        <p class="weather-icon-description-item-tem text-white" >
+                                            <span id="max-tem">23</span><sup>o</sup>C
                                         </p>
                                         <p class="weathe-icon-description-item-text text-white">
                                             Nhiệt độ cao nhất
@@ -720,72 +620,6 @@
                         <div class="row">
                             <div class="col-12 col-sm-5 flex">
                                 <div class="moon-title flex mr-auto moon-title-active ">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/half_moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waning Gibbous</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/full_moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waxing Gibbous</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/1_4moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waxing Crescent</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/1_8moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waning Crescent</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/6_7moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waxing Gibbous</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/0_moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waning Crescent</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto ">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/half_moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waning Gibbous</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/full_moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waxing Gibbous</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/1_4moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waxing Crescent</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/1_8moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waning Crescent</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto">
-                                    <div class="moon-title-content mr-auto flex-col">
-                                        <img src="./asset/img/moon/0_moon.png" alt="" class="img-w-100 mr-auto">
-                                        <p class="text-white text-center mt-3">Waning Crescent</p>
-                                    </div>
-                                </div>
-                                <div class="moon-title flex mr-auto ">
                                     <div class="moon-title-content mr-auto flex-col">
                                         <img src="./asset/img/moon/half_moon.png" alt="" class="img-w-100 mr-auto">
                                         <p class="text-white text-center mt-3">Waning Gibbous</p>

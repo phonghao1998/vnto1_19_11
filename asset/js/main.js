@@ -154,19 +154,71 @@ function hideMenu() {
 }
 
 // tab moon
+var moon = [
+    {
+        img : "half_moon.png",
+        title : "Waning Gibbous"
+    },
+    {
+        img : "full_moon.png",
+        title : "Waxing Gibbous"
+    },
+    {
+        img : "1_4moon.png",
+        title : "Waxing Crescent"
+    },
+    {
+        img : "6_7moon.png",
+        title : "Waxing Gibbous"
+    },
+    {
+        img : "0_moon.png",
+        title : "Waxing Crescent"
+    },
+    {
+        img : "1_8moon.png",
+        title : "Waxing Crescent"
+    },
+    {
+        img : "half_moon.png",
+        title : "Waning Gibbous"
+    },
+    {
+        img : "full_moon.png",
+        title : "Waxing Gibbous"
+    },
+    {
+        img : "1_4moon.png",
+        title : "Waxing Crescent"
+    },
+    {
+        img : "6_7moon.png",
+        title : "Waxing Gibbous"
+    },
+    {
+        img : "half_moon.png",
+        title : "Waning Gibbous"
+    },
+    {
+        img : "full_moon.png",
+        title : "Waxing Gibbous"
+    }
+];
+
 const moonConditions = document.querySelectorAll('.moon-conditon');
-// const moonConditionImgs = document.querySelectorAll('.moon-conditon img');
-const moonTitles = document.querySelectorAll('.moon-title');
-// const moonTitleImg = document.querySelector('.moon-title-content img');
+const moonTitles = document.querySelector('.moon-title');
+const moonTitleImg = document.querySelector('.moon-title-content img');
+const moonTitleContent= document.querySelector('.moon-title-content p');
+
+console.log(moonConditions);
 moonConditions.forEach((item, index) => {
-   const Title = moonTitles[index];
+
     item.addEventListener('click', function() {
         removeaActive(moonConditions);
-        removeaActiveTitle(moonTitles);
-        console.log(Title)
-        Title.classList.add('moon-title-active');
+        console.log(moon[index].img);
         this.classList.add('moon-active');
-        // moonTitleImg.src = moonConditionImgs[index].src;
+        moonTitleImg.src = "./asset/img/moon/" + moon[index].img;
+        moonTitleContent.innerHTML = moon[index].title;
     });
 });
 function removeaActive(item) {
@@ -174,26 +226,68 @@ function removeaActive(item) {
     item[i].classList.remove('moon-active');
   }
 }
-function removeaActiveTitle(item) {
-    for (var i = 0; i < item.length; i++) {
-      item[i].classList.remove('moon-title-active');
-    }
-}
 
-// .tab time
+
+// .tab place
+const place = [
+    {
+        currnetPlace : "Ha noi",
+        currentTem : "23",
+        img: "weather_mostlysun (1).png",
+        minTem : "19",
+        speedWind: "6.679 km/h",
+        timeSun : "06:11",
+        uv : "4 (High)",
+        feelTem: "22",
+        maxTem : "23",
+        imgTitle: "Mostly cloudy"
+    },
+    {
+        currnetPlace : "Istanbul",
+        currentTem : "15",
+        img: "weather_cloudy@2x.png",
+        minTem : "12",
+        speedWind: "5.56 km/h",
+        timeSun : "7:05",
+        uv : "2 (Medium)",
+        feelTem: "18",
+        maxTem : "19",
+        imgTitle: "Mostly rainy"
+    },
+    {
+        currnetPlace : "Tokyo",
+        currentTem : "19",
+        img: "weather_mostlysun (1).png",
+        minTem : "18",
+        speedWind: "2.568km/h",
+        timeSun : "06:30",
+        uv : "5 (High)",
+        feelTem: "25",
+        maxTem : "26",
+        imgTitle: "Mostly cloudy"
+    },
+    
+]
+
 
 const currentTimes = document.querySelectorAll('.curent-place-content')
-const deTailPlaces = document.querySelectorAll('.detail-place')
- 
+const placeTitle = document.querySelector('.detail-palce-title-content p')
+const placeCurrentTem = document.querySelector('.current-tem span')
+const placeCurrentImg = document.querySelector('.detail-place-icon img')
+const placeCurrentImgTitle = document.querySelector('.detail-place-icon p')
+
 currentTimes.forEach((item, index) => {
-    const Place = deTailPlaces[index];
+    
     item.addEventListener('click', function(){
-        removePlaceActive(deTailPlaces);
-        Place.classList.add('detail-place-active')
+        placeTitle.innerHTML = place[index].currnetPlace;
+        placeCurrentTem.innerHTML = place[index].currentTem;
+        placeCurrentImgTitle.innerHTML = place[index].imgTitle;
+        document.getElementById("min-tem").innerHTML = place[index].minTem;
+        document.getElementById("speed-wind").innerHTML = place[index].speedWind;
+        document.getElementById("time-sun").innerHTML = place[index].timeSun;
+        document.getElementById("uv").innerHTML = place[index].uv;
+        document.getElementById("feel-tem").innerHTML = place[index].feelTem;
+        document.getElementById("max-tem").innerHTML = place[index].maxTem;
+        
     })
 })
-function removePlaceActive(item) {
-    for (var i = 0; i < item.length; i++) {
-      item[i].classList.remove('detail-place-active');
-    }
-  }
