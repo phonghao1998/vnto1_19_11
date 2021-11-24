@@ -288,6 +288,7 @@ currentTimes.forEach((item, index) => {
         document.getElementById("uv").innerHTML = place[index].uv;
         document.getElementById("feel-tem").innerHTML = place[index].feelTem;
         document.getElementById("max-tem").innerHTML = place[index].maxTem;
+        placeCurrentImg.src = "./asset/img/" + place[index].img;
         
     })
 })
